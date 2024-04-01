@@ -24,6 +24,8 @@ class IsEnabledMessage {
 @HostApi(dartHostTestHandler: 'TestWakelockPlusApi')
 abstract class WakelockPlusApi {
   void toggle(ToggleMessage msg);
+  void toggleCPU(ToggleMessage msg);
 
   IsEnabledMessage isEnabled();
+  IsEnabledMessage isCPUEnabled();
 }
